@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 999;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #009688;
+}
+
+.book-btn {
+  background: #009688;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  text-align: center;
+  color: white;
+}
+
+.hero .bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons .btn {
+  background: #009688;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.buttons .btn.outline {
+  border: 2px solid white;
+  background: transparent;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.services {
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.services h3,
+.about h3,
+.contact h3 {
+  text-align: center;
+  color: #009688;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about, .contact {
+  padding: 3rem 2rem;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form button {
+  background: #009688;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+footer {
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
