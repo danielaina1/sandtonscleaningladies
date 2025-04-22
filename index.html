@@ -55,13 +55,25 @@
 
   <section id="contact" class="contact">
     <h3>Contact Us</h3>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Phone" />
-      <textarea placeholder="Message" rows="4"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  className="space-y-4"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="bot-field" />
+
+  <input type="text" name="name" placeholder="Name" className="w-full p-3 border rounded-xl" required />
+  <input type="email" name="email" placeholder="Email" className="w-full p-3 border rounded-xl" required />
+  <input type="tel" name="phone" placeholder="Phone" className="w-full p-3 border rounded-xl" />
+  <textarea name="message" placeholder="Message" className="w-full p-3 border rounded-xl" rows="4" required></textarea>
+  
+  <button type="submit" className="w-full bg-teal-600 text-white py-3 rounded-full hover:bg-teal-700 transition">
+    Send Message
+  </button>
+</form>
     <div class="info">
       <p><strong>Phone:</strong> +27 72 123 4567</p>
       <p><strong>Email:</strong> info@sandtonscleaning.co.za</p>
