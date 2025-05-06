@@ -2,120 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sandton's Cleaning</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-white text-gray-800 font-sans">
-
-  <!-- Header -->
-  <header class="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white z-10">
-    <div class="flex items-center space-x-2">
-      <img src="logo-cleaning.png" alt="Logo" class="w-10 h-10 rounded-full">
-      <h1 class="text-2xl font-bold text-teal-600">Sandton's Cleaning</h1>
-    </div>
-    <nav class="space-x-4">
-      <a href="#services" class="hover:text-teal-500">Services</a>
-      <a href="#about" class="hover:text-teal-500">About</a>
-      <a href="#contact" class="hover:text-teal-500">Contact</a>
-      <a href="#contact" class="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">Book Now</a>
+<body>
+  <header>
+    <h1>Sandton's Cleaning</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative text-center py-32 px-4 text-white">
-    <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
-    <img src="cleaning-crew-bg.jpg" alt="Professional Cleaners" class="absolute inset-0 object-cover w-full h-full z-[-1]">
-    <div class="relative z-10">
-      <h2 class="text-4xl font-bold mb-4 text-white">We Don’t Cut Corners, We Clean Them</h2>
-      <p class="text-lg text-gray-200 mb-6">
-        Professional residential and commercial cleaning services in Sandton
-      </p>
-      <div class="space-x-4">
-        <a href="#contact" class="bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 transition">Book a Cleaner</a>
-        <a href="#contact" class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-teal-600 transition">Get a Free Quote</a>
-      </div>
-    </div>
+  <section class="hero">
+    <h2>Professional Cleaning Services in Sandton</h2>
+    <p>We make homes and offices shine — book your trusted cleaner today!</p>
+    <a href="#" class="btn">Get a Quote</a>
   </section>
 
-  <!-- Intro Section -->
-  <section class="py-16 px-4 max-w-4xl mx-auto text-center">
-    <p class="text-xl text-gray-700">
-      From homes to offices, Sandton’s Cleaning delivers expert care and attention to detail.
-      We’re here to make your space shine, just like we do at Prolific Car Wash—only this time, indoors!
-    </p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="bg-white py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold text-center mb-12 text-teal-700">Our Services</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="p-6 rounded-2xl shadow hover:shadow-lg transition border border-gray-100">
-          <h4 class="text-xl font-semibold text-teal-600 mb-2">Residential Cleaning</h4>
-          <p class="text-gray-600">Sparkling clean homes with flexible scheduling and attention to detail.</p>
-        </div>
-        <div class="p-6 rounded-2xl shadow hover:shadow-lg transition border border-gray-100">
-          <h4 class="text-xl font-semibold text-teal-600 mb-2">Commercial & Office Cleaning</h4>
-          <p class="text-gray-600">Professional cleaning for businesses, clinics, and offices.</p>
-        </div>
-        <div class="p-6 rounded-2xl shadow hover:shadow-lg transition border border-gray-100">
-          <h4 class="text-xl font-semibold text-teal-600 mb-2">Pre/Post-Occupation Cleaning</h4>
-          <p class="text-gray-600">Move in or out with ease—deep cleans that reset your space.</p>
-        </div>
-        <div class="p-6 rounded-2xl shadow hover:shadow-lg transition border border-gray-100">
-          <h4 class="text-xl font-semibold text-teal-600 mb-2">Carpet & Upholstery</h4>
-          <p class="text-gray-600">Steam and deep cleaning for carpets, couches, and more.</p>
-        </div>
-        <div class="p-6 rounded-2xl shadow hover:shadow-lg transition border border-gray-100">
-          <h4 class="text-xl font-semibold text-teal-600 mb-2">Window Cleaning</h4>
-          <p class="text-gray-600">Crystal clear windows—inside and out.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="bg-gray-50 py-20 px-4 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-bold mb-6 text-teal-700">About Us</h3>
-      <p class="text-lg text-gray-700">
-        Sandton’s Cleaning was born from the same passion that fuels our trusted car wash.
-        We know how to care for your space—whether it’s four wheels or four walls.
-        Our mission is simple: consistent, reliable service you can count on.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-white py-20 px-4">
-    <div class="max-w-3xl mx-auto">
-      <h3 class="text-3xl font-bold text-center mb-6 text-teal-700">Contact Us</h3>
-      <form name="contact" method="POST" data-netlify="true" class="space-y-4">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 border rounded-xl" required>
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-xl" required>
-        <input type="tel" name="phone" placeholder="Phone" class="w-full p-3 border rounded-xl">
-        <textarea name="message" placeholder="Message" class="w-full p-3 border rounded-xl" rows="4" required></textarea>
-        <button type="submit" class="w-full bg-teal-600 text-white py-3 rounded-full hover:bg-teal-700 transition">Send Message</button>
-      </form>
-      <div class="text-center mt-8 text-gray-600">
-        <p><strong>Phone:</strong> +27 72 123 4567</p>
-        <p><strong>Email:</strong> info@sandtonscleaning.co.za</p>
-        <p><strong>Hours:</strong> Mon–Sat: 8am–6pm | Sun: Closed</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center p-4 text-sm text-gray-600">
-    © 2025 Sandton's Cleaning. All rights reserved.
+  <footer>
+    <p>&copy; 2025 Sandton's Cleaning. All rights reserved.</p>
   </footer>
-<script src="script.js"></script>
 </body>
 </html>
