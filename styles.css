@@ -189,4 +189,75 @@ body {
 
 .testimonial {
   background-color: #ffffff; /* Ivory white testimonial cards */
-  padding: 1.5rem
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  color: #e36d7c;
+}
+
+/* Contact */
+.contact {
+  background-color: #f8f0e3; /* Light beige background */
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: #e36d7c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #d05d6e;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer .social {
+  margin-top: 1rem;
+}
+
+.footer .social a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footer .social a:hover {
+  text-decoration: underline;
+}
+
